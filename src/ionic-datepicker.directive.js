@@ -270,8 +270,12 @@
         };
         //Called when the user clicks on the Set' button of the modal
         scope.setIonicDatePickerDate = function () {
-          dateSelected();
-          scope.closeModal();
+          if(!scope.date_selection.selectedDate){
+            alert("Please select a day of month to proceed");
+          }else{
+            dateSelected();
+            scope.closeModal();
+          }
         };
 
         //Getting the reference for the 'ionic-datepicker' modal.
