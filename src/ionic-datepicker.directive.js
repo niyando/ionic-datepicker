@@ -180,17 +180,20 @@
         };
 
         scope.monthChanged = function (month) {
+          scope.date_selection = {};
           var monthNumber = scope.monthsList.indexOf(month);
           currentDate.setMonth(monthNumber);
           refreshDateList(currentDate);
         };
 
         scope.yearChanged = function (year) {
+          scope.date_selection = {};
           currentDate.setFullYear(year);
           refreshDateList(currentDate);
         };
 
         scope.prevMonth = function () {
+          scope.date_selection = {};
           if (currentDate.getMonth() === 1) {
             currentDate.setFullYear(currentDate.getFullYear());
           }
@@ -203,6 +206,7 @@
         };
 
         scope.nextMonth = function () {
+          scope.date_selection = {};
           if (currentDate.getMonth() === 11) {
             currentDate.setFullYear(currentDate.getFullYear());
           }
@@ -270,7 +274,7 @@
         };
         //Called when the user clicks on the Set' button of the modal
         scope.setIonicDatePickerDate = function () {
-          if(!scope.date_selection.selectedDate){
+          if(!scope.date_selection.selected === true){
             alert("Please select a day of month to proceed");
           }else{
             dateSelected();
