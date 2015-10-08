@@ -20,7 +20,7 @@
 "}\n" +
 "\n" +
 ".color_blue {\n" +
-"  color: rgb(56, 126, 245) !important;\n" +
+"  color: #5FBBF0 !important;\n" +
 "}\n" +
 "\n" +
 ".bg_color_blue {\n" +
@@ -33,7 +33,7 @@
 "}\n" +
 "\n" +
 ".date_col:active {\n" +
-"  background-color: rgba(56, 126, 245, 1);\n" +
+"  background-color: #5FBBF0;\n" +
 "  cursor: pointer;\n" +
 "}\n" +
 "\n" +
@@ -46,7 +46,7 @@
 "}\n" +
 "\n" +
 ".date_selected {\n" +
-"  background-color: rgba(56, 126, 245, 1) !important;\n" +
+"  background-color: #5FBBF0 !important;\n" +
 "}\n" +
 "\n" +
 ".today {\n" +
