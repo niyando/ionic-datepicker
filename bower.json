@@ -1,10 +1,10 @@
 {
-  "name": "ionic-datepicker",
+  "name": "ionic-datepicker-ext",
   "version": "0.9.0",
   "authors": [
-    "rajeshwarpatlolla <rajeshwar.patlolla@gmail.com>"
+    "Nirav <niyando@gmail.com>"
   ],
-  "description": "A date picker component for ionic framework",
+  "description": "A date picker component for ionic framework -ext removes close and today buttons. Alert if no date selected on clicking Done",
   "main": [
     "./dist/ionic-datepicker.bundle.min.js"
   ],
@@ -16,7 +16,7 @@
     "datepicker for ionic framework"
   ],
   "license": "MIT",
-  "homepage": "https://github.com/rajeshwarpatlolla",
+  "homepage": "https://github.com/niyando/ionic-datepicker",
   "ignore": [
     "**/.*",
     "node_modules",
