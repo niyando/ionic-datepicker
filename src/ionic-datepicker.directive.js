@@ -275,7 +275,11 @@
         //Called when the user clicks on the Set' button of the modal
         scope.setIonicDatePickerDate = function () {
           if(!scope.date_selection.selected === true){
-            alert("Please select a day of month to proceed");
+            $ionicPopup.alert({
+              title: 'Date of Birth',
+              template: 'Please select a day of month to proceed.',
+              buttons: [{text:'OK', type:'button-calm'}]
+            });
           }else{
             dateSelected();
             scope.closeModal();
