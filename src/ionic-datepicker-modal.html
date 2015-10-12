@@ -1,6 +1,9 @@
 <ion-modal-view class="ionic_datepicker_modal">
   <ion-header-bar ng-class="modalHeaderColor">
     <h1 class="title">{{titleLabel}}</h1>
+    <button class="button button-clear button-primary" ng-click="setIonicDatePickerDate()">
+      <span class="bold white">DONE</span>
+    </button>
   </ion-header-bar>
   <ion-content class="ionic_datepicker_modal_content">
     <div class="ionic_datepicker">
@@ -72,11 +75,11 @@
       </div>
     </div>
   </ion-content>
-  <ion-footer-bar  ng-class="modalFooterColor">
+ <!--  <ion-footer-bar  ng-class="modalFooterColor">
     <div class="row no_padding">
       <div class="text-center" ng-class="showTodayButton == 'true' ? 'col-33' : 'col-50'"></div>
       <div class="text-center" ng-class="showTodayButton == 'true' ? 'col-33' : 'col-50'" ng-click="setIonicDatePickerDate()"><button class="button button-clear">{{setLabel}}</button></div>
       <div class="col-34 text-center" ng-if="showTodayButton == 'true'"></div>
     </div>
-  </ion-footer-bar>
+  </ion-footer-bar> -->
 </ion-modal-view>
