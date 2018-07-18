@@ -73,6 +73,11 @@
       <div class="error_msg padding-horizontal"
            ng-show="date_selection.submitted === true && date_selection.selected === false">{{errorMsgLabel}}
       </div>
+      <div style="width:100%;text-align:center">
+        <button style="width:50%;text-align:center" class="button button-calm activated" ng-click=setIonicDatePickerDate()>
+          <span class="bold">DONE</span>
+        </button>
+      </div>
     </div>
   </ion-content>
  <!--  <ion-footer-bar  ng-class="modalFooterColor">
